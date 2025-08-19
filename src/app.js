@@ -4,3 +4,9 @@ function saludar() {
 }
 
 saludar();
+
+function saludarConError() {
+    console.log("Hola" + {nombre});
+}
+
+saludarConError();
