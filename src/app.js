@@ -6,7 +6,8 @@ function saludar() {
 saludar();
 
 function saludarConError() {
-    console.log("Hola" + {nombre});
+    const nombre = "Agustin";
+    console.log("Hola " + nombre);
 }
 
 saludarConError();
