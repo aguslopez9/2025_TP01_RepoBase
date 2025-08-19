@@ -46,3 +46,20 @@ aplico el fix a main: git merge hotfix/corregir-error-variable
 y despues lo aplico a mi rama de desarrollo: git checkout feature/boton-mensaje, git merge main. 
 decidi utilizar merge y no cherry-pick porque es la estrategia mas comun y la que mejor se adapta a este caso.
 al combinar ramas completas no perdemos ningun commit, mantiene la trazabilidad completa y evita problemas de duplicacion. 
+
+## 4. Hace un PR y aceptalo
+
+## 5. Crear una versión etiquetada
+Marcá una versión estable con el tag v1.0.
+nos aseguramos de estar en main git checkout main, git pull origin main
+
+creamos el tag: git tag -a v1.0 -m "v1.0: Version estable etiquetada" y lo pusheamos al repo remoto git push origin v1.0
+
+
+Explicá en decisiones.md qué convenciones usaste y por qué.
+la convencion que usamos para el tag es la siguiente:
+en v1.0.0
+v indica version
+1 indica una version mayor -> los cambios son incomaptibles con versiones anteriores
+0 indica una version menor -> nuevas funcionalidades compatibles hacia atras
+o indica un parche -> correccion de bugs compatibles hacia atras
