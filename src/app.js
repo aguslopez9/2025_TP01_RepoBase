@@ -4,3 +4,10 @@ function saludar() {
 }
 
 saludar();
+
+function saludarConError() {
+    const nombre = "Agustin";
+    console.log("Hola " + nombre);
+}
+
+saludarConError();
