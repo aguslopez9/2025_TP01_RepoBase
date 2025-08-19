@@ -24,6 +24,7 @@ trabajar en una rama separada de main nos permite mantener el codigo principal s
 cree una rama propia para la nueva funcionalidad, esto hace mas facil la revision del codigo y permite una integracion mas controlada a main.
 si algo sale mal, podemos revertir el commit sin afectar codigo no relacionado a la nueva feature
 
+
 cree tres commits distintos buscando mantener la atomicidad, esto tiene varias ventajas: la identificacion rapida de problemas, reversion segura en caso de errores y un codigo mas facil de revisar en general.
 
 ## 3. Corregir un error (simulado) y aplicar el fix
